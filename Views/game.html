@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <title>TwiMon</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div id="container" style="margin-left:100px;">
+      <canvas
+        id="canvas"
+        width="1000"
+        height="800"
+        style="position:absolute;"
+      ></canvas>
+    </div>
+    <img id="monster-image" src="test.gif" style="display: none;" />
+    <img id="background-image" src="stageB.png" style="display: none;" />
+    <script src="battle.js"></script>
+  </body>
+</html>

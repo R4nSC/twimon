@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="select.js"></script>
+		<title><%= title %></title>	
+	</head>
+	<body>
+		<table border="1" width="500" cellspacing="0" cellpadding="5" bordercolor="#333333">
+			<form name = "selectForm" action="/store" method="post">
+			<input type = "submit" name = "submitButton" value = "選択" disabled="disabled"><br>
+			<tr>
+			<th width = "10" >select</th>
+			<th width = "48">Icon</th>
+			<th width = "50">Name</th>
+			<th width = "50">HP</th>
+			<th width = "50">ATK</th>
+			<th width = "50">DEF</th>
+			<th width = "50">SPEED</th>
+			</tr>
+			<% for(var i = 0;i < users.length;i++){ %>
+				<% var user = users[i]; %>
+				<tr>
+				<td><input type="checkbox" name="c" value="<%- user.id %>"></td>
+				<td><img src="<%= user.icon %>" width="48" height="48" border="0" /></td>
+				<td><%- user.name %></td>
+				<td><%- user.HP %></td>
+				<td><%- user.ATK %></td>
+				<td><%- user.DEF %></td>
+				<td><%- user.SPD %></td>
+				</tr>
+			<% } %>
+			</form>
+		</table>
+	</body>
+</html>

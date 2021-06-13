@@ -1,0 +1,25 @@
+{
+  "name": "twimon",
+  "version": "0.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "async": "^3.1.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "jquery": "^3.4.1",
+    "mecab-async": "^0.1.2",
+    "passport": "^0.4.0",
+    "passport-twitter": "^1.0.4",
+    "socket.io": "^2.2.0",
+    "twit": "^2.2.11",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
